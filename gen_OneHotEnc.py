@@ -103,6 +103,7 @@ class GDF:
         train_df['アーキテクト']=output_architect
         train_df['インフラ']=output_infra
         train_df['SP']=output_sp
+        return train_df
 
     def gen_locale(self, train_df):
         location_list = train_df['location']
@@ -626,6 +627,7 @@ class GDF:
         test_df['R言語']=output_r
         test_df['ios']=output_ios
         test_df['others']=output_others
+        return test_df
 
 
 if __name__ == '__main__':
